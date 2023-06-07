@@ -1,0 +1,16 @@
+{
+  "name": "view",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tail": "npx tailwindcss -i ./assets/styles/input.css -o ./assets/styles/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "daisyui": "^3.0.3",
+    "tailwindcss": "^3.3.2"
+  }
+}
