@@ -1,0 +1,17 @@
+GET http://localhost:3001/admin
+
+
+###
+GET http://localhost:3000/user/647e15dc68c318e40f70c3cd
+
+
+###
+POST http://localhost:3001/admin
+Content-Type: application/json
+
+{
+	"admin_username": "Matin",
+    "admin_password": "mmmp",
+    "admin_fullname":"matin pega"
+}
+
