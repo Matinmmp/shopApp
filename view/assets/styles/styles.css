@@ -1,0 +1,21 @@
+@keyframes rotate {
+    from {
+        transform: rotate(0deg) ;
+    }
+    to {
+        transform: rotate(360deg) ;
+    }
+}
+
+.load {
+    width: 60px;
+    height: 60px;
+    border: solid 10px #000000;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -10rem;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transition: all 2s ease-in;
+    animation: rotate 1s infinite linear;
+}
