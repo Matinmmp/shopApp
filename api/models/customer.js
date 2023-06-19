@@ -9,12 +9,20 @@ const customerSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    customer_password:{
+        type: String,
+        required: true
+    },
     customer_phone: {
         type: String,
         required: true
     },
     customer_addres: {
         type: Array,
+        required: true
+    },
+    customer_loged: {
+        type: Boolean,
         required: true
     }
 });

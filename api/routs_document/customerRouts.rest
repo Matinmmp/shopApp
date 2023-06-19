@@ -1,7 +1,7 @@
 GET http://localhost:3001/customer
 
 ###
-GET http://localhost:3001/customer/647f6e4f6330849224185b88
+GET http://localhost:3001/customer/6486bbf8382d45544c6d7466
 
 
 ###
@@ -12,7 +12,33 @@ Content-Type: application/json
     "customer_name":"Matin",
     "customer_email":"Mohammadipegasusm6@mail.com",
     "customer_phone":"09183102170",
+    "customer_password":"mmmp",
+    "customer_loged":true,
     "customer_addres":[
         {"home":"Hamedan" },
         {"office":"NoWhere"}]
 }
+
+###
+
+PUT http://localhost:3001/customer/6486bbf8382d45544c6d7466
+Content-Type: application/json
+
+{
+  "_id": "6486bbf8382d45544c6d7466",
+  "customer_name": "Matin2",
+  "customer_email": "Mohammadipegasusm6@gmail.com",
+  "customer_password": "mmmp",
+  "customer_phone": "09183102170",
+  "customer_addres": [
+    {
+      "home": "Hamedan"
+    },
+    {
+      "office": "NoWhere2"
+    }
+  ],
+  "customer_loged": false,
+  "__v": 0
+}
+

@@ -1,0 +1,25 @@
+GET http://localhost:3001/orderItem
+
+
+###
+PUT http://localhost:3001/orderItem/648ca1ae393777dacfb87ac4
+Content-Type: application/json
+
+{
+    "_id": "648ca1ae393777dacfb87ac4",
+    "orderItem_date": "Fri Jun 16 2023 10:53:22 GMT-0700 (Pacific Daylight Time)",
+    "product_id": "648b3b970d62fad945f4c9df",
+    "customer_id": "6486bbf8382d45544c6d7466",
+    "orderItem_color": "#0d01f9",
+    "orderItem_size": "41",
+    "orderItem_quantity": "5",
+    "orderItem_totalPrice": "300",
+    "orderItem_status": false,
+    "orderItem_address": {
+      "home": "Hamedan"
+    },
+    "orderItem_shipping": "",
+    "orderItem_payment": "",
+    "orderItem_isOrdered": false,
+    "__v": 0
+  }

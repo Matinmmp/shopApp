@@ -3,6 +3,12 @@ import mongoose from 'mongoose';
 
 import adminRoute from './routers/adminRoutes.js';
 import customerRoute from './routers/customerRoutes.js'
+import brandRoute from './routers/brandrouters.js';
+import productRoute from './routers/productRoutes.js';
+import orderRoute from './routers/orderRoutes.js';
+import orderItemRoutes from './routers/orderItemRoutes.js';
+
+
 
 const app = express();
 mongoose.connect(
@@ -22,6 +28,12 @@ app.use(express.json());
 
 app.use('/admin', adminRoute);
 app.use('/customer', customerRoute);
+app.use('/brand', brandRoute);
+app.use('/product', productRoute);
+app.use('/orderItem', orderItemRoutes);
+
+
+
 
 
 app.listen(3001, () => console.log('Server Started'));

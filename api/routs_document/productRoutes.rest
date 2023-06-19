@@ -1,0 +1,67 @@
+GET http://localhost:3001/product
+
+###   descending , ascending
+GET http://localhost:3001/product/sort/descending
+
+###
+GET http://localhost:3001/product/brand/Nike
+
+###
+GET http://localhost:3001/product/648805ccb2b350a48c9cd50e
+
+###
+POST http://localhost:3001/product
+Content-Type: application/json
+
+{
+    "product_name": "Nike 2",
+    "product_description": "No Description",
+    "product_price": "150",
+    "product_sizes": [
+      "44",
+      "45"
+    ],
+    "product_colors": [
+      "#000000",
+      "#0d01f9",
+      "##f90101"
+    ],
+    "product_brand": "Nike",
+    "product_image_urls": [
+      "Rectangle8.png",
+      "Rectangle7.png"
+    ],
+    "product_quantity": 10,
+    "product_soldnumber": null,
+    "product_hashtags": [
+      ""
+    ],
+    "product_score": null,
+    "product_view": 10,
+    "__v": 0
+}
+
+###
+GET http://localhost:3001/product
+###
+PUT http://localhost:3001/product/648b3b970d62fad945f4c9df
+Content-Type: application/json
+
+{
+    "_id":"648b3b970d62fad945f4c9df",
+    "product_name":"Nike 2",
+    "product_description":"No Description",
+    "product_price":"150",
+    "product_sizes":["39,40,41,43"],
+    "product_colors":["#000000","#0d01f9","##f90101"],
+    "product_brand":"Nike",
+    "product_image_urls":["Rectangle6.png","Rectangle7.png"],
+    "product_quantity":10,
+    "product_soldnumber":"",
+    "product_hashtags":"",
+    "product_score":"",
+    "product_view":10,
+    "product_isliked":true,
+    "__v": 0
+}
+

@@ -11,7 +11,6 @@ const brandSchema = new mongoose.Schema({
     },
     brand_view:{
         type:Number,
-        required:false,
         default:0
     }
 });

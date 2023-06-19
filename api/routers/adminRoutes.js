@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 import express from 'express';
 import AdminModel from '../models/admin.js';
 
@@ -22,7 +21,7 @@ router.post('/',async(req,res)=>{
     try {
         const newAdmin = await admin.save();
         res.status(201).json(newAdmin);
-    } catch (error) {
+    } catch (err) {
         res.status(400).json({ error: err.message });
     }
 })

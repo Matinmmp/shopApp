@@ -1,0 +1,18 @@
+GET http://localhost:3001/brand
+
+
+
+###
+POST http://localhost:3001/brand
+Content-Type: application/json
+
+{
+	"brand_name": "Nike",
+	"brand_icon": "WallpaperDog-1.png",
+	"brand_view": "0"
+}
+
+
+
+###
+ 

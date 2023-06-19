@@ -52,8 +52,12 @@ const productSchema = new mongoose.Schema({
         type:Number,
         required:false,
         default:0
+    },
+    product_isliked:{
+        type:Boolean,
+        default:false
     }
 });
 
 
-export default mongoose.model('product',productSchema);
+export default mongoose.model('products',productSchema);
