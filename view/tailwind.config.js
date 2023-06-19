@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ["./assets/views/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+        screens: {
+            'xs': '400px',
+            ...defaultTheme.screens,
+          },
+    },
   },
 
   plugins: [require("daisyui")],

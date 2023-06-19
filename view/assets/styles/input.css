@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.brand_item {
+    @apply border-2 border-secondary rounded-full py-[3px] px-4 font-semibold cursor-pointer;
+}
+
+.brand_item.active{
+    @apply bg-secondary text-white ;
+}
+
+
+.size{
+    @apply w-12 h-12 rounded-full border-[3px] border-secondary border-opacity-70 flex justify-center items-center;
+}
+
+.size.active{
+    @apply border-primary bg-primary border-opacity-100 text-white;
+}
+

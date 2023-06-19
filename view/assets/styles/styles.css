@@ -1,9 +1,10 @@
 @keyframes rotate {
     from {
-        transform: rotate(0deg) ;
+        transform: rotate(0deg);
     }
+
     to {
-        transform: rotate(360deg) ;
+        transform: rotate(360deg);
     }
 }
 
@@ -18,4 +19,54 @@
     border-bottom-color: transparent;
     transition: all 2s ease-in;
     animation: rotate 1s infinite linear;
+}
+
+#loading {
+    animation: lodingToLeft 3s ease 3s 1 forwards;
+}
+
+@keyframes lodingToLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+#firstimg {
+    background: no-repeat url('/view/assets/img/WallpaperDog-1.png') center;
+    position: relative;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

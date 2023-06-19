@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/output.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,-25" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+
+
+</head>
+
+<body class="overflow-x-hidden relative h-[100vh] ">
+
+    <nav class="py-4 px-8">
+        <div class="flex justify-between items-center w-full ">
+            <div class="flex gap-2">
+                <div class=" w-10 h-10 rounded-full bg-primary"></div>
+                <div class="flex flex-col">
+                    <span class="text-sm">Good Morning</span>
+                    <span class="text-sm font-bold ">Matin</span>
+                </div>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+                <a href="../views/favorite.html" id="favorite" class="material-symbols-outlined cursor-pointer">
+                    favorite
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-4 px-8">
+        <div id="search" class="flex items-center bg-accent p-2 rounded-md cursor-pointer">
+            <span class="material-symbols-outlined text-zinc-600">
+                Search
+            </span>
+            <span class="text-zinc-400 ps-1">search</span>
+        </div>
+    </section>
+
+
+    <section class="py-4 px-8">
+        <div id="brnadsBox" class="grid grid-cols-4 sm:grid-cols-8 justify-items-center gap-4 ">
+
+            <!-- <div class="flex flex-col items-center justify-center gap-2">
+                <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center">
+                    <img class="w-7 h-7" src="../img/nike_128px.png" alt="">
+                </div>
+                <span class="text-sm font-bold">Nike</span>
+            </div> -->
+
+
+        </div>
+    </section>
+
+    <section class="overflow-hidden">
+        <div class="flex justify-between items-center py-2 px-8">
+            <h3 class="text-lg font-bold">Most Popular</h3>
+            <span id="seeAll" class="font-bold">See All</span>
+        </div>
+        <div id="mpBrandsBox" class=" flex gap-3 items-center ps-8 overflow-x-auto ">
+        </div>
+    </section>
+
+    <section>
+        <div id="productsBox"
+            class="grid  grid-cols-2 md:grid-cols-4 lg:grid-cols-6 justify-items-center gap-3 py-4 pb-12 px-8">
+
+            <!-- <div class="w-[150px] h-[200px] ">
+                <div class="w-[150px] h-[150px] bg-accent rounded-3xl flex">
+                    <img src="../img/Rectangle6.png" class="w-[80%] h-[80%] m-auto" alt="">
+                </div>
+                <div class="text-primary">
+                    <h4 class="text-lg font-semibold break whitespace-nowrap">K-Swiss ista Train...</h4>
+                    <span class=" font-semibold">$ 85.00</span>
+                </div>
+            </div> -->
+
+        </div>
+
+    </section>
+
+
+    <section class="fixed bottom-0 left-0 right-0 bg-white z-10">
+        <div id="btnList" class="flex pt-2 pb-4 px-8 justify-around text-secondary">
+
+            <a href="../views/home.html" class="flex flex-col items-center ">
+                <div class="material-symbols-outlined">
+                    home
+                </div>
+                <span class="text-xs font-semibold">Home</span>
+            </a>
+
+            <a href="../views/cart.html" class="flex flex-col items-center opacity-50">
+                <div class="material-symbols-outlined">
+                    shopping_bag
+                </div>
+                <span class="text-xs font-semibold">Cart</span>
+            </a>
+
+            <a href="../views/order.html" id="orderbtn" class="flex flex-col items-center opacity-50">
+                <div class="material-symbols-outlined">
+                    shopping_cart
+                </div>
+                <span class="text-xs font-semibold">Orders</span>
+            </a>
+
+            <a class="flex flex-col items-center  opacity-50">
+                <div class="material-symbols-outlined">
+                    account_balance_wallet
+                </div>
+                <span class="text-xs font-semibold">Wallet</span>
+            </a>
+
+            <a class="flex flex-col items-center  opacity-50">
+                <div class="material-symbols-outlined">
+                    person
+                </div>
+                <span class="text-xs font-semibold">Person</span>
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+
+    <section id="searchBox" class="absolute top-0 left-0 right-0 bottom-0 hidden bg-white z-50 ">
+        <span id="back" class=" absolute top-2 left-4 z-10">
+            <i class="bi bi-arrow-left text-3xl"></i>
+        </span>
+        <div class="p-6 pt-12">
+            <div class="border-[1px] border-primary rounded-2xl bg-accent flex items-center ">
+                <i class="bi bi-search p-3"></i>
+                <input id="searchInput" type="text" placeholder="search"
+                    class="w-full p-3 bg-accent border-none outline-none rounded-2xl">
+                <i class="bi bi-funnel p-3"></i>
+            </div>
+            <section id="searchSection" class="block">
+                <div class="flex items-center justify-between py-6 border-b-[1px] border-accent">
+                    <span class="text-xl font-bold">Recent</span>
+                    <span id="clearAll" class="font-bold cursor-pointer">Clear All</span>
+                </div>
+                <div class="py-4">
+                    <div id="suggestionList" class="text-lg text-secondary opacity-75">
+                    </div>
+                </div>
+            </section>
+
+            <section id="resualtSection" class="hidden overflow-auto">
+                <div class="flex justify-between items-center py-4">
+                    <span id="resultFor" class="text-xl text-primary font-bold"> </span>
+                    <span id="foundNumber" class="text-primary font-bold">0 found</span>
+                </div>
+                <div id="notFound" class="block">
+                    <img src="../img/NotFound.PNG" alt="">
+
+                </div>
+                <div id="resualtList"
+                    class="hidden  grid-cols-2 md:grid-cols-4 lg:grid-cols-6 justify-items-center gap-2 py-4 pb-12 px-4 ">
+
+                </div>
+            </section>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <script type="module" src="../scripts/home.js"></script>
+
+
+    </script>
+</body>
+
+</html>

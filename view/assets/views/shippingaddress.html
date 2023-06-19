@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/output.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+
+<body class="overflow-y-scroll p-4 relative pb-32 bg-accent h-[100vh]">
+
+    <section>
+        <div class="flex justify-between">
+            <div class="flex items-center">
+                <i id="back" class="bi bi-arrow-left-short me-2 text-2xl" ></i>
+                <span class="font-bold text-xl">Shipping Adress</span>
+            </div>
+            <i class="bi bi-three-dots"></i>
+        </div>
+    </section>
+
+
+    <section class="py-4 ">
+
+        <div id="addressList" class="grid grid-cols-1 py-4 sm:grid-cols-2 ">
+
+        </div>
+        <!-- <div id="address" class="flex items-center my-8 bg-white shadow-md shadow-gray-400   py-5 rounded-3xl ">
+            <div class="w-2/12 ps-1">
+                <img src="../img/location.PNG" alt="">
+            </div>
+            <div class="w-8/12 flex flex-col gap-2 px-2">
+                <span id="address_name" class="text-lg font-bold">Home</span>
+                <span id="address_des" class="text-secondary text-sm">Lorem ipsum dolor, sit amet </span>
+            </div>
+            <div class="w-2/12 ps-6">
+                <input type="radio" name="radio-1" class="radio" />
+            </div>
+        </div> -->
+
+        <div class="w-full px-4">
+
+            <a href="#my_modal_8" class="btn bg-gray-300 text-primary w-full rounded-full">Add New Address</a>
+            <div class="modal" id="my_modal_8">
+                <div class="modal-box">
+                    <h3 class="font-bold text-lg">Add New Address</h3>
+                    <input type="text" id="name" class="input input-secondary w-full mt-2" placeholder="Name">
+                    <input type="text" id="address" class="input input-secondary w-full mt-2" placeholder="Address">
+                    <div class="modal-action flex justify-between ">
+                        <a href="#" class="btn btn-secondary">Close</a>
+                        <a id="addAddress" href="#" class="btn btn-secondary">Add</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="fixed bottom-0 left-0 right-0 rounded-[2.5rem]  py-8 px-4 border-t-[1px] border-accent bg-white">
+        <button id="apply" class="btn btn-primary rounded-full w-full ">Apply </button>
+    </section>
+
+    <script type="module" src="../scripts/shippingaddress.js"></script>
+</body>
+
+</html>

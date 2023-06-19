@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/output.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+
+<body class="overflow-y-scroll p-4 relative pb-32 bg-accent h-[100vh]">
+
+    <section>
+        <div class="flex justify-between">
+            <div class="flex items-center">
+                <i id="back" class="bi bi-arrow-left-short me-2 text-2xl"></i>
+                <span class="font-bold text-xl">Shipping Adress</span>
+            </div>
+            <i class="bi bi-three-dots"></i>
+        </div>
+    </section>
+
+
+    <section class="py-4 ">
+
+        <div id="address" class="flex items-center my-4 bg-white shadow-md shadow-gray-400 py-4 rounded-3xl ">
+            <div class="w-2/12 ps-1 flex  ">
+                <img src="../img/p1.PNG" alt="" class="h-10 w-10 ms-auto ">
+            </div>
+            <div class="w-6/12 flex flex-col gap-2 px-2">
+                <span id="address_name" class="text-lg font-bold">My Wallet</span>
+            </div>
+            <div class="w-4/12 ps-6 flex items-center gap-4">
+                <span class="text-lg font-bold">$ 10</span>
+                <input type="radio" name="radio-1" class="radio" checked />
+            </div>
+        </div>
+
+        <div id="address" class="flex items-center my-4 bg-white shadow-md shadow-gray-400 py-4 rounded-3xl ">
+            <div class="w-2/12 ps-1 flex  ">
+                <img src="../img/p2.PNG" alt="" class="h-10 w-10 ms-auto ">
+            </div>
+            <div class="w-8/12 flex flex-col gap-2 px-2">
+                <span id="address_name" class="text-lg font-bold">PayPal</span>
+            </div>
+            <div class="w-2/12 ps-6 flex items-center gap-4">
+                <input type="radio" name="radio-1" class="radio" />
+            </div>
+        </div>
+
+        <div id="address" class="flex items-center my-4 bg-white shadow-md shadow-gray-400 py-4 rounded-3xl ">
+            <div class="w-2/12 ps-1 flex  ">
+                <img src="../img/p3.PNG" alt="" class="h-10 w-10 ms-auto ">
+            </div>
+            <div class="w-8/12 flex flex-col gap-2 px-2">
+                <span id="address_name" class="text-lg font-bold">Google Pay</span>
+            </div>
+            <div class="w-2/12 ps-6 flex items-center gap-4">
+                <input type="radio" name="radio-1" class="radio" />
+            </div>
+        </div>
+
+
+        <div id="address" class="flex items-center my-4 bg-white shadow-md shadow-gray-400 py-4 rounded-3xl ">
+            <div class="w-2/12 ps-1 flex  ">
+                <img src="../img/p4.PNG" alt="" class="h-10 w-10 ms-auto ">
+            </div>
+            <div class="w-8/12 flex flex-col gap-2 px-2">
+                <span id="address_name" class="text-lg font-bold">Apple Pay</span>
+            </div>
+            <div class="w-2/12 ps-6 flex items-center gap-4">
+                <input type="radio" name="radio-1" class="radio" />
+            </div>
+        </div>
+
+        <div id="address" class="flex items-center my-4 bg-white shadow-md shadow-gray-400 py-4 rounded-3xl ">
+            <div class="w-2/12 ps-5 flex  ">
+                <img src="../img/p1.PNG" alt="" class="h-10 w-10 ms-auto ">
+            </div>
+            <div class="w-8/12 flex flex-col gap-2 px-2">
+                <span id="address_name" class="text-lg font-bold">.... .... .... 4679</span>
+            </div>
+            <div class="w-2/12 ps-6 flex items-center gap-4">
+                <input type="radio" name="radio-1" class="radio" />
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section class="fixed bottom-0 left-0 right-0 rounded-[2.5rem]  py-8 px-4 border-t-[1px] border-accent bg-white">
+        <a id="confirmPayment" href="#my_modal_8" class="btn btn-primary rounded-full w-full">Confirm Payment </a>
+    </section>
+
+    <div class="modal" id="my_modal_8">
+        <div class="modal-box  h-[60vh] w-[80vw] rounded-[3rem]">
+            <div class="flex items-center justify-center">
+                <img src="../img/shop.PNG" alt="">
+            </div>
+            <div class="flex flex-col items-center gap-3 pt-2">
+                <div class="text-2xl font-bold">Order Successful!</div>
+                <div>You have Successfuly made order</div>
+            </div>
+            <div class="modal-action w-full flex flex-col gap-4">
+                <a href="#" id="viewOrder" class=" bg-primary rounded-[2.5rem] text-white w-full py-4 text-center">View Order</a>
+                <a href="#" class=" bg-accent rounded-[2.5rem] text-primary w-full py-4 text-center">View E-Reciept </a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="../scripts/payment.js"></script>
+</body>
+
+</html>
